@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('infolocal/{localId}', 'LocalController@visualizar');
+Route::put('infolocal/{localId}', 'LocalController@atualizar');
